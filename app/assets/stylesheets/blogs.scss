@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap";
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -158,4 +159,12 @@ h6 {
 
 .actions {
   margin-top: 5px;
+}
+
+/*
+ * Custom styles
+ */
+
+.social-links li {
+  font-size: 2em;
 }
