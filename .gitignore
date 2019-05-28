@@ -28,3 +28,4 @@
 
 # I don't want to share my credentials
 /config/credentials.yml.enc
+.env
