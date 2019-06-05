@@ -1,7 +1,7 @@
 {
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
-  "ruby.intellisense": "rubyLocate"
+  "ruby.intellisense": "rubyLocate",
   // If not specified searches for 'rubocop' executable available on PATH (default and recommended)
   "ruby.rubocop.executePath": "",
   // You can use specific path
