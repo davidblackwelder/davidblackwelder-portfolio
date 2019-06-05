@@ -1,4 +1,4 @@
-<div class="col-md-8 blog-main">
+<div class="col-md-8 blog-main word-wrap">
   <h2 class="pb-3 mb-4 font-italic border-bottom">
     <%= @blog.title %>
   </h2>
@@ -8,7 +8,7 @@
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
 
   <p>
-    <%= @blog.body %>
+    <%= markdown @blog.body %>
   </p>
 
   <%= render 'comments/comment_form' %>
