@@ -221,6 +221,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rb-readline (0.5.5)
+    redis (4.1.2)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
@@ -321,6 +322,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.2)
   rb-readline
+  redis (~> 4.1, >= 4.1.2)
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
