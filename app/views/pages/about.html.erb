@@ -1,22 +1,108 @@
-<h1 class="cover-heading">About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1 class="card-header">About Me</h1>
+    <div class="card-body">
+      <div class="row">
+          <div class="col-md-4">
+              <%= image_tag "profile-image.jpg", alt: "Profile Image" %>
 
-<hr>
+              <div class="skills">
+                <% @skills.each do |skill| %>
+                  <div class="skill">
+                    <h4><%= skill.title %></h4>
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-striped bg-warning"
+                        role="progressbar"
+                        aria-valuenow="<%= skill.percent_utilized %>"
+                        aria-valuemax="100"
+                        style="width: <%= skill.percent_utilized %>%"
+                      >
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+          </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <%= image_tag "profile-image.jpg", alt: "Profile Image" %>
+          <div class="col-md-8">
+              <p class="lead">
+                  My career as a leadership professional with a passion for connecting people and processes has positioned me well to take on a challenging role in Web Development,having completed a comprehensive Code Immersion Program.
+              </p>
+
+              <p class="lead">
+                  I was selected as one of 1,500 applicants out of 10,000 by Udacity.com for a full scholarship to their Front-End Web Developer Nanodegree based on quality of my code and community involvement. I am currently developing and deploying websites and web apps as a freelance web developer, review my GitHub profile to see my latest projects.
+              </p>
+
+              <p>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#jobHistory"
+                  aria-expanded="false"
+                  aria-controller="jobHistory"
+                >
+                  Job History
+                </button>
+
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#education"
+                  aria-expanded="false"
+                  aria-controller="education"
+                >
+                  Education
+                </button>
+
+                <p>
+                  <div class="collapse" id="jobHistory">
+                    <div class="card card-block">
+                      <div class="card-body">
+                        <div class="card-text">
+                          Job 1
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-block">
+                      <div class="card-body">
+                        <div class="card-text">
+                          Job 2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="collapse" id="education">
+                    <div class="card card-block">
+                      <div class="card-body">
+                        <div class="card-text">
+                          School 1
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-block">
+                      <div class="card-body">
+                        <div class="card-text">
+                          School 2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </p>
+              </p>
+          </div>
+      </div>
     </div>
-
-    <div class="col-md-8">
-        <hr>
-        <p class="lead">
-            My career as a leadership professional with a passion for connecting people and processes has positioned me well to take on a challenging role in Web Development,having completed a comprehensive Code Immersion Program.
-        </p>
-
-        <p class="lead">
-            I was selected as one of 1,500 applicants out of 10,000 by Udacity.com for a full scholarship to their Front-End Web Developer Nanodegree based on quality of my code and community involvement. I am currently developing and deploying websites and web apps as a freelance web developer, review my GitHub profile to see my latest projects.
-        </p>
-    </div>
+  </div>
 </div>
+
+
+
+
 
 
