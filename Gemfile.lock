@@ -188,7 +188,8 @@ GEM
     pg (1.2.3)
     popper_js (1.16.0)
     public_suffix (4.0.5)
-    puma (3.12.6)
+    puma (4.3.9)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -322,7 +323,7 @@ DEPENDENCIES
   newrelic_rpm
   petergate (~> 2.0, >= 2.0.1)
   pg (>= 0.18, < 2.0)
-  puma (~> 3.12.6)
+  puma (~> 4.3.9)
   rack-timeout
   rails (~> 5.2.2)
   rb-readline
